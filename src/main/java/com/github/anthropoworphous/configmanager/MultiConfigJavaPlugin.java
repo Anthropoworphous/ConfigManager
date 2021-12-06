@@ -69,4 +69,15 @@ public class MultiConfigJavaPlugin extends JavaPlugin {
         }
         return newConfigs.get(fileName);
     }
+
+    @Override
+    public void saveDefaultConfig() {
+        saveDefaultConfig("config.yml");
+    }
+
+    public void saveDefaultConfig(String fileName) {
+        if (!configFiles.get(fileName).exists()) {
+            saveResource(fileName, false);
+        }
+    }
 }
