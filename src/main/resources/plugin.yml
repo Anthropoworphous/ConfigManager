@@ -1,0 +1,9 @@
+name: ConfigManager
+version: '${project.version}'
+main: com.github.anthropoworphous.configmanager.ConfigManager
+api-version: 1.17
+prefix: ConfigManager
+load: STARTUP
+authors: [ Anthropoworphous ]
+description: manages config
+website: https://github.com/Anthropoworphous
